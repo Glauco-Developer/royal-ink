@@ -1,0 +1,65 @@
+@import '../../assets/sass-tools/tools.sass'
+
+footer
+    width: 100%
+    background-color: $r
+    padding: 30px 0
+    background-image: url('../../assets/images/cover.jpg')
+    background-position: center top
+    background-attachment: fixed
+    .container
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        width: 90%
+        padding: 30px 0
+        h2
+            font-family: $robs
+            color: $w
+            font-size: 30px
+            font-weight: 600
+            position: relative
+            margin-left: 20px
+            opacity: .9
+            text-shadow: 1px 1px 1px $b
+            &:before
+                content: ""
+                width: 10px
+                height: 100%
+                background-color: $r
+                position: absolute
+                left: -20px
+        .left
+            width: 33.333%
+            p
+                font-family: $lato
+                color: $w
+                font-size: 14px
+                font-weight: 400
+            ul
+                margin: 0
+                padding: 0
+                margin-top: 40px
+                list-style: none
+                li
+                    font-family: $lato
+                    color: $w
+                    font-size: 14px
+                    font-weight: 400
+                    margin: 25px 0px
+                    strong
+                        font-weight: 400
+                        font-size: 16px
+                        color: $r
+                        margin-right: 10px
+                        display: block
+        .middle
+            width: 33.333%
+            .fb-page
+                width: 100%
+        .right
+            width: 33.333%
+        p
+            font-family: $lato
+            color: $w
+            font-size: 13px

@@ -1,0 +1,83 @@
+@import '../../../assets/sass-tools/tools.sass'
+
+.top-galeria
+    width: 83%
+    padding-top: 75px
+    padding-bottom: 75px
+    margin: 0 auto
+    text-align: right
+    h2
+        font-family: $robs
+        font-size: 2.2em
+        font-weight: 800
+        color: $b
+        margin: 0
+        margin-top: 10px
+        span
+            color: $r
+    p
+        max-width: 60%
+        float: right
+        clear: both
+        line-height: 28px
+        font-family: $lato
+        font-size: 1em
+        font-weight: 400
+        color: $b
+        opacity: 0.6
+.galeria
+    display: flex
+    justify-content: center
+    width: 90%
+    text-align: center
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 150px
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        text-align: left
+        li
+            display: inline-block
+            width: 33%
+    figure
+        @include transition(all linear .2s)
+        cursor: pointer
+        position: relative
+        &:after
+            content: ""
+            width: 100%
+            height: 0
+            background-color: rgba(0,0,0,0.9)
+            position: absolute
+            bottom: 4px
+            @include transition(all ease-in-out .2s)
+        &:hover
+            &:after
+                height: 99%
+            figcaption
+                opacity: 1
+                @include transform(translate(-50%, -50%))
+                @include transition(all .2s)
+                &:hover
+                    background-color: $b
+            img
+                // filter: grayscale(100%)
+        figcaption
+            opacity: 0
+            color: $w
+            font-size: 20px
+            font-weight: 300
+            font-family: $lato
+            position: absolute
+            top: 50%
+            left: 50%
+            @include transform(translate(-50%, -60%) )
+            z-index: 1
+            padding: 8px 15px
+            border: 1.5px solid $w
+            @include transition(all .4s .2s)
+        img
+            max-width: 100%
+            max-height: 100%

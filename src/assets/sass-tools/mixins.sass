@@ -1,0 +1,32 @@
+@mixin transform($transf)
+    transform: $transf
+    -moz-transform: $transf
+    -webkit-transform: $transf
+    -ms-transform: $transf
+    -o-transform: $transf
+
+@mixin transition($trans)
+    transition: $trans
+    -moz-transition: $trans
+    -webkit-transition: $trans
+    -ms-transition: $trans
+    -o-transition: $trans
+
+@mixin animation($animation)
+    -webkit-animation: $animation
+    -moz-animation: $animation
+    -ms-animation: $animation
+    -o-animation: $animation
+    animation: $animation
+
+/deep/
+    ::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        background-color: rgba(0,0,0,0)
+
+    ::-webkit-scrollbar
+        width: 6px
+        background-color: rgba(0,0,0,1)
+
+    ::-webkit-scrollbar-thumb
+        background-color: $r

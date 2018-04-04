@@ -1,0 +1,32 @@
+@import '../../assets/sass-tools/tools.sass'   
+#preloader
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 4
+    background-image: url('../../assets/images/bg_contato.jpg')
+    background-position: center top
+    background-attachment: fixed
+    background-color: $b
+    @include transition(all 1s .3s)
+    &.hide
+        height: 0
+    .progress
+        position: fixed
+        bottom: 0
+        left: 0
+        width: 0
+        height: 2px
+        background-color: $w
+        z-index: 5
+        @include animation(preloader ease-in-out 1.8s forwards)
+    figure
+        background-image: url('../../assets/images/tattoo-machine.png')
+        width: 64px
+        height: 64px
+        margin: 0 auto
+        @include animation(trait-load ease-in-out 2.2s forwards)
+        position: absolute
+        bottom: 0
+        left: -10%

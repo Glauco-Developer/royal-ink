@@ -1,0 +1,46 @@
+@import '../../../assets/sass-tools/tools.sass'
+
+.sobre
+    display: flex
+    justify-content: space-between
+    padding-top: 75px
+    margin-top: 75px
+    padding-bottom: 75px
+    background-image: url('../../../assets/images/bg-1.jpg')
+    background-size: cover
+    background-attachment: fixed
+    .left
+        figure
+            img
+                max-width: 600px
+                max-height: 600px
+                border: 15px solid #333333
+                @include transition(border linear .4s)
+                &:hover
+                    border: 15px solid $r
+    .right
+        h2
+            font-family: $robs
+            font-size: 2.2em
+            font-weight: 100
+            color: $w
+            margin: 0
+            margin-top: 40px
+            span
+                color: $r
+        h3
+            font-family: $robs
+            font-size: 1.6em
+            font-weight: 100
+            color: $w
+            margin: 0
+            span
+                color: $r
+        p
+            max-width: 70%
+            line-height: 28px
+            font-family: $lato
+            font-size: 1em
+            font-weight: 400
+            color: $w
+            opacity: 0.6
